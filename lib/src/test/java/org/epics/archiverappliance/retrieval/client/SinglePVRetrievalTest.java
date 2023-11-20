@@ -27,12 +27,6 @@ import org.junit.Test;
  */
 public class SinglePVRetrievalTest {
 
-    @Before
-    public void setUp() throws Exception {}
-
-    @After
-    public void tearDown() throws Exception {}
-
     /**
      * singleFileWithWellKnownPoints file with one data point per day for 2012. All data points are for 09:43:37 UTC.
      * @throws Exception
