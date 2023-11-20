@@ -167,7 +167,18 @@ public class EpicsMessage {
     public String getStringValue() {
         String notSupportedMessage = "Conversion to string not supported yet";
         switch (info.getType()) {
-            case SCALAR_BYTE, SCALAR_SHORT, SCALAR_INT, SCALAR_FLOAT, SCALAR_ENUM, SCALAR_DOUBLE, WAVEFORM_BYTE, WAVEFORM_DOUBLE, WAVEFORM_ENUM, WAVEFORM_FLOAT, WAVEFORM_INT, WAVEFORM_SHORT -> {
+            case SCALAR_BYTE,
+                    SCALAR_SHORT,
+                    SCALAR_INT,
+                    SCALAR_FLOAT,
+                    SCALAR_ENUM,
+                    SCALAR_DOUBLE,
+                    WAVEFORM_BYTE,
+                    WAVEFORM_DOUBLE,
+                    WAVEFORM_ENUM,
+                    WAVEFORM_FLOAT,
+                    WAVEFORM_INT,
+                    WAVEFORM_SHORT -> {
                 throw new UnsupportedOperationException(notSupportedMessage);
             }
             case SCALAR_STRING -> {
